@@ -1,13 +1,13 @@
-# InterviewIO
+# InterviewIQ
 
 A next-generation AI-powered mock interview platform that delivers realistic, interactive interview experiences with real-time vocal feedback and personalized question generation based on your role.
 
-![InterviewIO Demo](/screenshots/realtime-feedback.png)
+![InterviewIQ Demo](/screenshots/realtime-feedback.png)
 *Mock interview session with real-time feedback*
 
 ## 🚀 Project Overview
 
-**InterviewIO** is a sophisticated mock interview platform built with a modern MERN-like stack (React + Node.js). It simulates real interview scenarios using AI-driven interactions, real-time voice analysis, and personalized question generation. The platform is designed for job seekers, students, and professionals to practice and improve their interview skills in a realistic, supportive environment.
+**InterviewIQ** is a sophisticated mock interview platform built with a modern MERN-like stack (React + Node.js). It simulates real interview scenarios using AI-driven interactions, real-time voice analysis, and personalized question generation. The platform is designed for job seekers, students, and professionals to practice and improve their interview skills in a realistic, supportive environment.
 
 ## ✨ Key Features
 
@@ -46,8 +46,8 @@ A next-generation AI-powered mock interview platform that delivers realistic, in
 ## 📁 Project Structure
 
 ```
-InterviewIO/
-├── InterviewIO-Backend/         # Backend (Node.js/Express)
+InterviewIQ/
+├── InterviewIQ-Backend/         # Backend (Node.js/Express)
 │   ├── controllers/
 │   │   └── InterviewController.js
 │   ├── models/
@@ -65,7 +65,7 @@ InterviewIO/
 │   ├── package.json
 │   └── WebSocketServer.js
 │
-└── interviewio-frontend/        # Frontend (React)
+└── InterviewIQ-frontend/        # Frontend (React)
     ├── public/
     │   ├── index.html
     │   ├── favicon.ico
@@ -120,26 +120,27 @@ graph TD
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/InterviewIO.git
-   cd InterviewIO
+   mkdir InterviewIQ
+   cd InterviewIQ
+   git clone https://github.com/Het4304/InterviewIQ.git
    ```
 
 2. **Backend Setup**
    ```bash
-   cd InterviewIO-Backend
+   cd InterviewIQ-Backend
    mkdir uploads
    npm install
    ```
 
 3. **Frontend Setup**
    ```bash
-   cd ../interviewio-frontend
+   cd ../InterviewIQ-frontend
    npm install
    ```
 
 4. **Environment Configuration**
    
-   Create a `.env` file in the `InterviewIO-Backend` directory:
+   Create a `.env` file in the `InterviewIQ-Backend` directory:
    ```env
    # Server Configuration
    MONGODB_URI=your_mongodb_url
@@ -153,13 +154,13 @@ graph TD
 
    Terminal 1 - Backend:
    ```bash
-   cd InterviewIO-Backend
+   cd InterviewIQ-Backend
    node index.js
    ```
    
    Terminal 2 - Frontend:
    ```bash
-   cd interviewio-frontend
+   cd InterviewIQ-frontend
    npm start
    ```
 
@@ -168,7 +169,7 @@ graph TD
    - Register a new account and login
    - Select a job role and begin your mock interview!
 
-## 🎮 How to Use InterviewIO
+## 🎮 How to Use InterviewIQ
 
 1. **Registration/Login**: Create an account and sign in
 2. **Role Selection**: Choose your target job role from available options
@@ -196,14 +197,14 @@ graph TD
 
 ## 🤝 Contributing
 
-We love contributions! Here's how you can help improve InterviewIO:
+We love contributions! Here's how you can help improve InterviewIQ:
 
 ### Development Process
 
 1. **Fork the Repository**
    ```bash
-   git clone https://github.com/yourusername/InterviewIO.git
-   cd InterviewIO
+   git clone https://github.com/yourusername/InterviewIQ.git
+   cd InterviewIQ
    ```
 
 2. **Create a Feature Branch**
@@ -274,7 +275,7 @@ This project is licensed under the MIT License - see the [LICENSE](/LICENSE) fil
 - **Murf AI** for providing high-quality voice synthesis API
 - **OpenAI** for Whisper speech-to-text capabilities
 - The React and Node.js communities for excellent documentation and tools
-- All contributors who have helped shape InterviewIO
+- All contributors who have helped shape InterviewIQ
 
 ## 📞 Support
 
@@ -286,7 +287,7 @@ If you have questions or need help:
   
 Made with ❤️ by the InterviewIQ Team
 
-<!-- [![GitHub stars](https://img.shields.io/github/stars/yourusername/InterviewIO?style=social)](https://github.com/yourusername/InterviewIO/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/InterviewIO?style=social)](https://github.com/yourusername/InterviewIO/network/members) -->
+<!-- [![GitHub stars](https://img.shields.io/github/stars/yourusername/InterviewIQ?style=social)](https://github.com/yourusername/InterviewIQ/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/yourusername/InterviewIQ?style=social)](https://github.com/yourusername/InterviewIQ/network/members) -->
 
 </div>
