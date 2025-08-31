@@ -2,7 +2,7 @@
 
 A next-generation AI-powered mock interview platform that delivers realistic, interactive interview experiences with real-time vocal feedback and personalized question generation based on your role.
 
-![InterviewIO Demo](https://via.placeholder.com/800x400.png?text=InterviewIO+Demo+Screenshot)
+![InterviewIO Demo](/screenshots/realtime-feedback.png)
 *Mock interview session with real-time feedback*
 
 ## 🚀 Project Overview
@@ -15,14 +15,14 @@ A next-generation AI-powered mock interview platform that delivers realistic, in
 - **Role-Based Selection**: Choose from various job roles to receive tailored interview questions
 - **Real-time Voice Interaction**: AI interviewer speaks using Murf AI's realistic voice synthesis
 - **Real-Time Vocal Analysis**: Instant feedback on pace, filler words, and clarity as you speak
-- **Comprehensive Session Analysis**: Detailed feedback report with scores and actionable recommendations
+- **Comprehensive Session Analysis**: Detailed feedback report with actionable recommendations
 - **User Authentication**: Secure login and registration system
 
 ### 🎨 UI/UX Features
 - **Responsive Design**: Optimized for both desktop and mobile devices
 - **Modern Interface**: Clean, intuitive user interface with custom CSS
 - **Dashboard**: Central hub to start interviews and track your progress
-- **Real-time Feedback**: Live metrics display during your responses
+- **Real-time Feedback**: Live feedback display during your responses
 
 ## 🛠️ Tech Stack
 
@@ -127,6 +127,7 @@ graph TD
 2. **Backend Setup**
    ```bash
    cd InterviewIO-Backend
+   mkdir uploads
    npm install
    ```
 
@@ -141,16 +142,11 @@ graph TD
    Create a `.env` file in the `InterviewIO-Backend` directory:
    ```env
    # Server Configuration
-   PORT=5000
-   NODE_ENV=development
-   
-   # API Keys
+   MONGODB_URI=your_mongodb_url
+   PORT=5100
    MURF_API_KEY=your_murf_api_key_here
    OPENAI_API_KEY=your_openai_api_key_here
    JWT_SECRET=your_secure_jwt_secret_here
-   
-   # Client URL (for CORS)
-   CLIENT_URL=http://localhost:3000
    ```
 
 5. **Start the Development Servers**
@@ -158,7 +154,7 @@ graph TD
    Terminal 1 - Backend:
    ```bash
    cd InterviewIO-Backend
-   npm run dev
+   node index.js
    ```
    
    Terminal 2 - Frontend:
@@ -169,20 +165,19 @@ graph TD
 
 6. **Access the Application**
    - Open your browser and navigate to `http://localhost:3000`
-   - Register a new account or login with existing credentials
+   - Register a new account and login
    - Select a job role and begin your mock interview!
 
 ## 🎮 How to Use InterviewIO
 
-1. **Registration/Login**: Create an account or sign in to your existing account
+1. **Registration/Login**: Create an account and sign in
 2. **Role Selection**: Choose your target job role from available options
-3. **Interview Setup**: Configure your microphone and camera permissions
+3. **Interview Setup**: Configure your microphone permission
 4. **Practice Session**: 
    - Listen to questions from the AI interviewer
    - Record your responses
    - Receive real-time feedback on your delivery
 5. **Review Results**: Analyze your performance with detailed feedback reports
-6. **Track Progress**: Monitor your improvement over multiple sessions
 
 ## 🚀 API Endpoints
 
@@ -192,14 +187,6 @@ graph TD
 | POST | `/api/auth/register` | Register a new user |
 | POST | `/api/auth/login` | Authenticate user |
 | GET | `/api/auth/me` | Get current user profile |
-
-<!-- ### Interview Routes
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/interview/start` | Initialize a new interview session |
-| POST | `/api/interview/process` | Process user audio response |
-| GET | `/api/interview/history` | Get user interview history |
-| GET | `/api/interview/results/:id` | Get specific interview results | -->
 
 ### WebSocket Events
 - `connection` - Establish real-time connection
@@ -229,28 +216,17 @@ We love contributions! Here's how you can help improve InterviewIO:
    - Add comments for complex logic
    - Update documentation as needed
 
-4. **Test Your Changes**
-   ```bash
-   # Run backend tests
-   cd InterviewIO-Backend
-   npm test
-   
-   # Run frontend tests
-   cd ../interviewio-frontend
-   npm test
-   ```
-
-5. **Commit Your Changes**
+4. **Commit Your Changes**
    ```bash
    git commit -m 'Add amazing feature'
    ```
 
-6. **Push to Your Branch**
+5. **Push to Your Branch**
    ```bash
    git push origin feature/amazing-feature
    ```
 
-7. **Open a Pull Request**
+6. **Open a Pull Request**
    - Describe your changes in detail
    - Reference any related issues
    - Include screenshots for UI changes
@@ -260,7 +236,6 @@ We love contributions! Here's how you can help improve InterviewIO:
 - Use meaningful variable and function names
 - Comment complex algorithms and business logic
 - Follow the existing code style and structure
-- Write tests for new functionality
 - Ensure responsive design for frontend components
 
 ## 🐛 Troubleshooting
@@ -286,7 +261,7 @@ We love contributions! Here's how you can help improve InterviewIO:
 ### Getting Help
 
 If you encounter issues not covered here:
-1. Check the existing [GitHub Issues](../../issues)
+1. Check the existing [GitHub Issues](https://github.com/Het4304/InterviewIQ/issues)
 2. Create a new issue with detailed description
 3. Include error messages and screenshots if possible
 
@@ -304,14 +279,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 If you have questions or need help:
-- Create an issue on our [GitHub repository](../../issues)
+- Create an issue on our [GitHub repository](https://github.com/Het4304/InterviewIQ/issues)
 ---
 
 <div align="center">
   
-Made with ❤️ by the InterviewIO Team
+Made with ❤️ by the InterviewIQ Team
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/InterviewIO?style=social)](https://github.com/yourusername/InterviewIO/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/yourusername/InterviewIO?style=social)](https://github.com/yourusername/InterviewIO/network/members)
+<!-- [![GitHub stars](https://img.shields.io/github/stars/yourusername/InterviewIO?style=social)](https://github.com/yourusername/InterviewIO/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/yourusername/InterviewIO?style=social)](https://github.com/yourusername/InterviewIO/network/members) -->
 
 </div>
