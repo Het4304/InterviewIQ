@@ -175,7 +175,7 @@ graph TD
 3. **Interview Setup**: Configure your microphone permission
 4. **Practice Session**: 
    - Listen to questions from the AI interviewer
-   - Record your responses
+   - Record your responses (for a minute)
    - Receive real-time feedback on your delivery
 5. **Review Results**: Analyze your performance with detailed feedback reports
 
