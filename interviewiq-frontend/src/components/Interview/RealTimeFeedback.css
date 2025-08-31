@@ -1,0 +1,113 @@
+.real-time-feedback {
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .feedback-placeholder {
+    text-align: center;
+    padding: 2rem 1rem;
+    color: #94a3b8;
+  }
+  
+  .placeholder-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+  }
+  
+  .feedback-placeholder p {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .feedback-placeholder small {
+    font-size: 0.8rem;
+    opacity: 0.8;
+  }
+  
+  .feedback-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .feedback-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 3px solid;
+    animation: slideIn 0.3s ease-out;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .feedback-item.neutral {
+    border-left-color: #667eea;
+  }
+  
+  .feedback-item.warning {
+    border-left-color: #fbbf24;
+  }
+  
+  .feedback-item.info {
+    border-left-color: #60a5fa;
+  }
+  
+  .feedback-item.error {
+    border-left-color: #ef4444;
+  }
+  
+  .feedback-icon {
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  
+  .feedback-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  
+  .feedback-message {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #e2e8f0;
+  }
+  
+  .feedback-metric {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    font-weight: 500;
+  }
+  
+  /* Scrollbar styling */
+  .real-time-feedback::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .real-time-feedback::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+  }
+  
+  .real-time-feedback::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+  }
+  
+  .real-time-feedback::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
